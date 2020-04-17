@@ -1,0 +1,16 @@
+PODS:
+  - YZLibraries (0.1.0)
+
+DEPENDENCIES:
+  - YZLibraries (from `../`)
+
+EXTERNAL SOURCES:
+  YZLibraries:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YZLibraries: baebaba1423c3e523f5900147c7c04a888ce9cc3
+
+PODFILE CHECKSUM: e57c3b1e93fd1e9b6bf06342f206c21b1eb42784
+
+COCOAPODS: 1.9.1

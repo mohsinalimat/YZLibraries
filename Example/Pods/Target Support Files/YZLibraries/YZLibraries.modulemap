@@ -1,0 +1,6 @@
+framework module YZLibraries {
+  umbrella header "YZLibraries-umbrella.h"
+
+  export *
+  module * { export * }
+}

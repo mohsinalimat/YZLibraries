@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		278261AAE67008E441FBCD15 /* Pods_YZLibraries_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YZLibraries_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A0296477164900479CF079D /* Pods-YZLibraries_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZLibraries_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YZLibraries_Tests/Pods-YZLibraries_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5E2A1076EB64757F7DC5E2A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5E2A1076EB64757F7DC5E2A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YZLibraries_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZLibraries_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,9 +42,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		651E7857CE90003C18EE910B /* Pods-YZLibraries_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZLibraries_Example.debug.xcconfig"; path = "Target Support Files/Pods-YZLibraries_Example/Pods-YZLibraries_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		73AF36C94C8F89C9A5F658E2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		73AF36C94C8F89C9A5F658E2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		850C72E39D04D2D025B0CE99 /* Pods-YZLibraries_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZLibraries_Tests.release.xcconfig"; path = "Target Support Files/Pods-YZLibraries_Tests/Pods-YZLibraries_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BF357ED417FE8D3FADED59F8 /* YZLibraries.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YZLibraries.podspec; path = ../YZLibraries.podspec; sourceTree = "<group>"; };
+		BF357ED417FE8D3FADED59F8 /* YZLibraries.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YZLibraries.podspec; path = ../YZLibraries.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C6C11C3A7C22D85283745D69 /* Pods-YZLibraries_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YZLibraries_Example.release.xcconfig"; path = "Target Support Files/Pods-YZLibraries_Example/Pods-YZLibraries_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CE9E34886A2906E86A031E1C /* Pods_YZLibraries_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YZLibraries_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -156,7 +156,6 @@
 				2A0296477164900479CF079D /* Pods-YZLibraries_Tests.debug.xcconfig */,
 				850C72E39D04D2D025B0CE99 /* Pods-YZLibraries_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

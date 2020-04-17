@@ -1,0 +1,22 @@
+{
+  "name": "YZLibraries",
+  "version": "0.1.0",
+  "summary": "A short description of YZLibraries.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yudiz-vipul/YZLibraries",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yudiz-vipul": "vipul.p@yudiz.in"
+  },
+  "source": {
+    "git": "https://github.com/yudiz-vipul/YZLibraries.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YZLibraries/Classes/**/*"
+}
