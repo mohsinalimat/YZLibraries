@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YZLibraries_Example' do
+  pod 'YZLibraries', :path => '../'
+
+  target 'YZLibraries_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
