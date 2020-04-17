@@ -22,7 +22,7 @@ pod 'YZLibraries'
 
 ## Author
 
-yudiz-vipul, vipul.p@yudiz.in
+Vipul Patel (Sr. iOS Developer), vipul.p@yudiz.in
 
 ## License
 

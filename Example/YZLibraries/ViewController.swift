@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import YZLibraries
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        UIAlertController.show(title: "Title", message: "Message", style: .alert, buttons: ["Okay"], controller: self, userAction: nil)
     }
 
     override func didReceiveMemoryWarning() {
