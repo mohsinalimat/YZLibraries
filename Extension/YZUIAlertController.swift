@@ -1,10 +1,13 @@
 //
-//  UIAlertControllerExtension.swift
+//  YZAppConfig.swift
+//  YZUIAlertController
+//
+//  Created by Vipul Patel on 21/04/20.
 //
 
 import UIKit
 
-//MARK: -
+//MARK: - UIAlertController
 extension UIAlertController {
     
     public static func show(with locationInfo: UIView? = nil, title: String?, message: String?, style: UIAlertController.Style, buttons: [String], controller: UIViewController?, userAction: ((_ action: String) -> ())?) {
@@ -25,8 +28,7 @@ extension UIAlertController {
                 parentController.present(alertController, animated: true, completion: nil)
             }
         }else{
-            if let appDelegate = UIApplication.shared.delegate,
-                let window = appDelegate.window,
+            if let window = _appDelegate.window,
                 let vcRoot = window?.rootViewController {
                 vcRoot.present(alertController, animated: true, completion: nil)
             }

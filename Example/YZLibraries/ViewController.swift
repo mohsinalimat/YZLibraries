@@ -13,13 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIAlertController.show(title: "Title", message: "Message", style: .alert, buttons: ["Okay"], controller: self, userAction: nil)
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
 }
 

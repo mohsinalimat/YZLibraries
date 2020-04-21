@@ -1,6 +1,0 @@
-framework module Pods_YZLibraries_Tests {
-  umbrella header "Pods-YZLibraries_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
