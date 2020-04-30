@@ -5,11 +5,66 @@
 [![License](https://img.shields.io/cocoapods/l/YZLibraries.svg?style=flat)](https://cocoapods.org/pods/YZLibraries)
 [![Platform](https://img.shields.io/cocoapods/p/YZLibraries.svg?style=flat)](https://cocoapods.org/pods/YZLibraries)
 
-## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Features
+
+- [x] **YZAppConfig** class used to configure `designWidth, designHeight, navigationBarHeight`. 
+- [x] **YZCALayer** is type of **CALayer** extension to add or apply `applyShadow, addCornerRadius, addBorder, addGradient`.
+- [x] **YZUIView** is type of **UIView** extension to add or apply `addCornerRadius, applyShadow, addGradient, addConstraint, addBorder`
+
 
 ## Requirements
+
+- iOS 12.0+
+- Xcode 11+
+- Swift 5.0+
+
+
+## Usage
+
+### 1. YZAppConfig Class
+
+`YZAppConfig` is used to set your design `width, height, navigationBarHeight` provided by your designer. By configure design settings, it will calculate `widthRatio, heightRatio, safeAreaInsets`
+
+**Initialisation:**
+```
+YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
+```
+**Properties:**
+*  `YZAppConfig.appDelegate` - Provides `UIApplicationDeletage` object using `UIApplication.shared.delegate!`.
+*  `YZAppConfig.navigationBarHeight` - Provides setted navigation bar height.
+*  `YZAppConfig.designWidth` - Provides setted design width.
+*  `YZAppConfig.designHeight` - Provides setted design height.
+*  `YZAppConfig.width` - Provides currently running iOS Device/Simulator  width using `UIScreen.main.bounds.size.width`.
+*  `YZAppConfig.height` - Provides currently running iOS Device/Simulator  height using `UIScreen.main.bounds.size.height`.
+*  `YZAppConfig.widthRatio` - Provides width ratio by calculating  `width/designWidth`.
+*  `YZAppConfig.heightRatio` - Provides height ratio by calculating  `height/designHeight`.
+*  `YZAppConfig.safeAreaInsets` - Provides `UIEdgeInsets` object using  `appDelegate.window!!.safeAreaInsets`.
+*  `YZAppConfig.safeAreaInsets` - Provides `UIEdgeInsets` object using  `appDelegate.window!!.safeAreaInsets`.
+
+### 2. YZCALayer Class
+`YZCALayer` is extension of `CALayer` to `addCornerRadius`, `applyShadow`, `addGradient`, `addConstraintWithSuperView`, `addBorder`, `addDashBorder`. 
+
+**Functions:**
+* `public func addCornerRadiusBy(_ roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero, fillColor: UIColor? = .black)` - It will use to add cornder radius using `CAShapeLayer`, with specific parameters.
+* `public func applyShadowWith(_ roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero, fillColor: UIColor? = nil, shadowOffset: CGSize = .zero, shadowColor: UIColor, shadowRadius: CGFloat = 3, shadowOpacity:Float = 0)` - It will use to draw a shadow using `CAShapeLayer`, with specific parameters.
+* `public func addBorderBy(_ roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero, fillColor: UIColor? = .black, strokeColor: UIColor? = nil, lineWidth: CGFloat = 1)` - It will use to draw a border using `CAShapeLayer`, with specific parameters.
+* `public func addDashBorderBy(_ cornerRadius: CGFloat = .leastNonzeroMagnitude, fillColor: UIColor? = .black, dashColor: UIColor? = nil, dashHeight: CGFloat = 1, dashWidth: CGFloat = 5, spaceBetweenDash: CGFloat = 5)` - It will use to draw a dash border using `CAShapeLayer`, with specific parameters.
+* `public func addGradient(_ colors: [UIColor], gradientPoint: YZGradientPoint, roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero)` - It will use to add gradient colors using `CAGradientLayer`, with specific parameters.
+
+### 3. YZUIView Class
+`YZUIView` is extension of `UIView` to `addCornerRadius`, `applyShadow`, `addGradient`, `addConstraintWithSuperView`, `addBorder`, `addDashBorder`. It will internally call `YZCALayer` functions to design `UIView` as per needed.
+
+**Functions:**
+* `public func addCornerRadiusBy(_ roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero, fillColor: UIColor? = .black)` - It will use to add cornder radius around `UIView`, with specific parameters.
+* `public func applyShadowWith(_ roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero, fillColor: UIColor? = nil, shadowOffset: CGSize = .zero, shadowColor: UIColor, shadowRadius: CGFloat = 3, shadowOpacity:Float = 0)` - It will use to draw a shadow around `UIView`, with specific parameters.
+* `public func addConstraintWithSuperView(_ topConstraint: CGFloat, leadingConstraint: CGFloat, bottomConstraint: CGFloat, trailingConstraint: CGFloat)` - It will use to add constraint with superView.
+* `public func addDashBorderBy(_ cornerRadius: CGFloat = .leastNonzeroMagnitude, fillColor: UIColor? = .black, dashColor: UIColor? = nil, dashHeight: CGFloat = 1, dashWidth: CGFloat = 5, spaceBetweenDash: CGFloat = 5)` - It will use to draw a dash border using `CAShapeLayer`, with specific parameters.
+* `public func addBorderBy(_ roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero, fillColor: UIColor? = .black, strokeColor: UIColor? = nil, lineWidth: CGFloat = 1)` - It will use to draw a border around `UIView`, with specific parameters.
+* `public func addDashBorderBy(_ cornerRadius: CGFloat = .leastNonzeroMagnitude, fillColor: UIColor? = .black, dashColor: UIColor? = nil, dashHeight: CGFloat = 1, dashWidth: CGFloat = 5, spaceBetweenDash: CGFloat = 5)` - It will use to draw a dash border around `UIView`, with specific parameters.
+* `public func addGradient(_ colors: [UIColor], gradientPoint: YZGradientPoint, roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero)` - It will use to add gradient colors inside `UIView`, with specific parameters.
+
+
 
 ## Installation
 
@@ -20,9 +75,11 @@ it, simply add the following line to your Podfile:
 pod 'YZLibraries'
 ```
 
+
 ## Author
 
-Vipul Patel (Sr. iOS Developer), vipul.p@yudiz.in
+Vipul Patel (Yudiz Solutions Pvt. Ltd.), vipul.p@yudiz.in
+
 
 ## License
 
