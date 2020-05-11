@@ -42,7 +42,7 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 *  `YZAppConfig.safeAreaInsets` - Provides `UIEdgeInsets` object using  `appDelegate.window!!.safeAreaInsets`.
 *  `YZAppConfig.safeAreaInsets` - Provides `UIEdgeInsets` object using  `appDelegate.window!!.safeAreaInsets`.
 
-### 2. YZCALayer Class
+### 2. YZCALayer
 `YZCALayer` is extension of `CALayer` to `addCornerRadius`, `applyShadow`, `addGradient`, `addConstraintWithSuperView`, `addBorder`, `addDashBorder`. 
 
 **Functions:**
@@ -52,7 +52,7 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 * `public func addDashBorderBy(_ cornerRadius: CGFloat = .leastNonzeroMagnitude, fillColor: UIColor? = .black, dashColor: UIColor? = nil, dashHeight: CGFloat = 1, dashWidth: CGFloat = 5, spaceBetweenDash: CGFloat = 5)` - It will use to draw a dash border using `CAShapeLayer`, with specific parameters.
 * `public func addGradient(_ colors: [UIColor], gradientPoint: YZGradientPoint, roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero)` - It will use to add gradient colors using `CAGradientLayer`, with specific parameters.
 
-### 3. YZUIView Class
+### 3. YZUIView
 `YZUIView` is extension of `UIView` to `addCornerRadius`, `applyShadow`, `addGradient`, `addConstraintWithSuperView`, `addBorder`, `addDashBorder`. It will internally call `YZCALayer` functions to design `UIView` as per needed.
 
 **Functions:**
@@ -65,6 +65,15 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 * `public func addGradient(_ colors: [UIColor], gradientPoint: YZGradientPoint, roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero)` - It will use to add gradient colors inside `UIView`, with specific parameters.
 
 
+### 4. YZArray
+`YZArray` is extension of `Array` collection type to perform operation like `uniqueElements` or  `removeElements`. 
+
+**Properties:**
+*  `uniqueElements` - It will provide unique elements array.
+
+**Functions:**
+* `public mutating func uniqueElementsInPlace()` - It will use to make unique elements array type without generating another copy of array type.
+* `public mutating func remove(_ elements: [Element])` - It will use to remove one or more than one provided elements from existing array.
 
 ## Installation
 

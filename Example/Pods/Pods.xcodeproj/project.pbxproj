@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03CD61EA2469454300501337 /* YZArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CD61E92469454300501337 /* YZArray.swift */; };
 		03F27F29244EFBD700FBF745 /* YZAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F27F28244EFBD700FBF745 /* YZAppConfig.swift */; };
 		03F27F2E244F035400FBF745 /* YZUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F27F2D244F035400FBF745 /* YZUIView.swift */; };
 		03F27F30244F0A8800FBF745 /* YZCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F27F2F244F0A8800FBF745 /* YZCALayer.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03CD61E92469454300501337 /* YZArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZArray.swift; sourceTree = "<group>"; };
 		03F27F28244EFBD700FBF745 /* YZAppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZAppConfig.swift; sourceTree = "<group>"; };
 		03F27F2D244F035400FBF745 /* YZUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YZUIView.swift; sourceTree = "<group>"; };
 		03F27F2F244F0A8800FBF745 /* YZCALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YZCALayer.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				03F27F2F244F0A8800FBF745 /* YZCALayer.swift */,
 				03F27F2D244F035400FBF745 /* YZUIView.swift */,
+				03CD61E92469454300501337 /* YZArray.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -266,7 +269,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1140;
 				TargetAttributes = {
 					0B6C8F48E3A8D4CD26FAFBA5E38ED825 = {
 						DevelopmentTeam = 5B5QP29D73;
@@ -318,6 +321,7 @@
 				03F27F29244EFBD700FBF745 /* YZAppConfig.swift in Sources */,
 				03F27F2E244F035400FBF745 /* YZUIView.swift in Sources */,
 				03F27F30244F0A8800FBF745 /* YZCALayer.swift in Sources */,
+				03CD61EA2469454300501337 /* YZArray.swift in Sources */,
 				B0F1DF880E0C3ABFE38453742CEF4D88 /* YZLibraries-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,7 +385,7 @@
 			baseConfigurationReference = 30BFBED19F26D6C09B34137ABDC0A5BE /* YZLibraries.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -451,7 +455,7 @@
 			baseConfigurationReference = E8B54A97886DA62C0E6B8B55988BDF12 /* YZLibraries.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
