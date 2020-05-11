@@ -1,6 +1,5 @@
 # YZLibraries
 
-[![CI Status](https://img.shields.io/travis/yudiz-vipul/YZLibraries.svg?style=flat)](https://travis-ci.org/yudiz-vipul/YZLibraries)
 [![Version](https://img.shields.io/cocoapods/v/YZLibraries.svg?style=flat)](https://cocoapods.org/pods/YZLibraries)
 [![License](https://img.shields.io/cocoapods/l/YZLibraries.svg?style=flat)](https://cocoapods.org/pods/YZLibraries)
 [![Platform](https://img.shields.io/cocoapods/p/YZLibraries.svg?style=flat)](https://cocoapods.org/pods/YZLibraries)
@@ -55,6 +54,17 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 ### 3. YZUIView
 `YZUIView` is extension of `UIView` to `addCornerRadius`, `applyShadow`, `addGradient`, `addConstraintWithSuperView`, `addBorder`, `addDashBorder`. It will internally call `YZCALayer` functions to design `UIView` as per needed.
 
+**Properties:**
+*  `isRound` - `@IBInspectable isRound` property is used to draw fully round on selected `UIView`.
+*  `borderWidth` - `@IBInspectable borderWidth` property is used to draw border around on selected `UIView`.
+*  `borderColor` - `@IBInspectable borderColor` property is used to apply border color on selected `UIView`.
+*  `cornerRadius` - `@IBInspectable cornerRadius` property is used to apply corner radius on selected `UIView`.
+*  `shadowRadius` - `@IBInspectable shadowRadius` property is used to define shadow radius on selected `UIView`.
+*  `shadowOpacity` - `@IBInspectable shadowOpacity` property is used to define shadow opacity on selected `UIView`.
+*  `shadowColor` - `@IBInspectable shadowColor` property is used to define shadow color on selected `UIView`.
+*  `shadowOffset` - `@IBInspectable shadowOffset` property is used to define shadow offsets on selected `UIView`.
+*  `zPosition` - `@IBInspectable zPosition` property is used to define `zPosition`.
+
 **Functions:**
 * `public func addCornerRadiusBy(_ roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero, fillColor: UIColor? = .black)` - It will use to add cornder radius around `UIView`, with specific parameters.
 * `public func applyShadowWith(_ roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero, fillColor: UIColor? = nil, shadowOffset: CGSize = .zero, shadowColor: UIColor, shadowRadius: CGFloat = 3, shadowOpacity:Float = 0)` - It will use to draw a shadow around `UIView`, with specific parameters.
@@ -66,7 +76,7 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 
 
 ### 4. YZArray
-`YZArray` is extension of `Array` collection type to perform operation like `uniqueElements` or  `removeElements`. 
+`YZArray` is extension of `Array` collection data type to perform operation like `uniqueElements` or  `removeElements`. 
 
 **Properties:**
 *  `uniqueElements` - It will provide unique elements array.
@@ -74,6 +84,7 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 **Functions:**
 * `public mutating func uniqueElementsInPlace()` - It will use to make unique elements array type without generating another copy of array type.
 * `public mutating func remove(_ elements: [Element])` - It will use to remove one or more than one provided elements from existing array.
+
 
 ## Installation
 

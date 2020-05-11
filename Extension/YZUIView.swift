@@ -7,6 +7,64 @@
 
 import Foundation
 
+//MARK: - UIView IBInspectable(s)
+public extension UIView {
+
+    /// `@IBInspectable isRound` property is used to draw fully round on selected `UIView`.
+    @IBInspectable var isRound: Bool {
+        get { return (layer.cornerRadius == (frame.size.width/2) ) || (layer.cornerRadius == (frame.size.height/2)) }
+        set { layer.cornerRadius = newValue == true ? (frame.size.height/2) : layer.cornerRadius }
+    }
+    
+    /// `@IBInspectable borderWidth` property is used to draw border around on selected `UIView`.
+    @IBInspectable var borderWidth: CGFloat {
+        get { return layer.borderWidth }
+        set { layer.borderWidth = newValue }
+    }
+    
+    /// `@IBInspectable borderColor` property is used to apply border color on selected `UIView`.
+    @IBInspectable var borderColor: UIColor {
+        get { return layer.borderColor == nil ? UIColor.clear : UIColor(cgColor: layer.borderColor!) }
+        set { layer.borderColor = newValue.cgColor }
+    }
+    
+    /// `@IBInspectable cornerRadius` property is used to apply corner radius on selected `UIView`.
+    @IBInspectable var cornerRadius: CGFloat {
+        get { return layer.cornerRadius }
+        set { layer.cornerRadius = newValue }
+    }
+    
+    /// `@IBInspectable shadowRadius` property is used to define shadow radius on selected `UIView`.
+    @IBInspectable var shadowRadius: CGFloat {
+        get { return layer.shadowRadius }
+        set { layer.shadowRadius = newValue }
+    }
+    
+    /// `@IBInspectable shadowOpacity` property is used to define shadow opacity on selected `UIView`.
+    @IBInspectable var shadowOpacity: Float {
+        get { return layer.shadowOpacity }
+        set { layer.shadowOpacity = newValue }
+    }
+    
+    /// `@IBInspectable shadowColor` property is used to define shadow color on selected `UIView`.
+    @IBInspectable var shadowColor: UIColor? {
+        get { return layer.shadowColor != nil ? UIColor(cgColor: layer.shadowColor!) : nil }
+        set { layer.shadowColor = newValue?.cgColor }
+    }
+    
+    /// `@IBInspectable shadowOffset` property is used to define shadow offsets on selected `UIView`.
+    @IBInspectable var shadowOffset: CGSize {
+        get { return layer.shadowOffset }
+        set { layer.shadowOffset = newValue }
+    }
+
+    /// `@IBInspectable zPosition` property is used to define `zPosition`.
+    @IBInspectable var zPosition: CGFloat {
+        get { return layer.zPosition }
+        set { layer.zPosition = newValue }
+    }
+}
+
 //MARK: - UIView Shadow(s) and CornerRadius(s)
 /// UIView extensiton to add shadow on UIView layer.
 extension UIView {
