@@ -86,13 +86,48 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 * `public mutating func remove(_ elements: [Element])` - It will use to remove one or more than one provided elements from existing array.
 
 
+### 5. YZURL
+`YZURL` is extension of `URL` and provides following properties and functions. 
+
+**Properties:**
+*  `isFileExists` - It will check file existance for given URL.
+*  `convertToData` - It will generate data object from given file URL.
+
+**Functions:**
+* `public func deleteFile()` - It will check file existance and delete from given URL.
+* `public func getThumbnailFromVideo()` - It will use to get thumbnail image from given video file URL.
+* `public func compressVideo(_ outputURL: URL, handler:@escaping (_ exportSession: AVAssetExportSession?, _ compressVideoURL: URL?)-> Void)` - It will use to compress video for given URL.
+* `public func getValueForQuery(_ parameter: String)` - It will use to get value from given query parameter.
+
+
+### 6. YZDictionary
+`YZDictionary` is extension of `Dictionary` and `NSDictionary` which provides following properties and functions. 
+
+**Properties:**
+*  `toJSON` - It will used to convert `Dictionary` to JSON String.
+*  `convertToData` - It will generate data object from given file URL.
+
+**Functions:**
+* `public mutating func merge(_ other: Dictionary)` - It will merge existing dictionary with provided dictionary.
+* `public func getDoubleValue(forKey: String)` - It will provide `Double` type value from given `NSDictionary`.
+* `public func getFloatValue(forKey: String)` - It will provide `Float` type value from given `NSDictionary`.
+* `public func getUIntValue(forKey: String)` - It will provide `UInt` type value from given `NSDictionary`.
+* `public func getIntValue(forKey: String)` - It will provide `Int` type value from given `NSDictionary`.
+* `public func getInt64Value(forKey: String)` - It will provide `Int64` type value from given `NSDictionary`.
+* `public func getInt32Value(forKey: String)` - It will provide `Int32` type value from given `NSDictionary`.
+* `public func getInt16Value(forKey: String)` - It will provide `Int16` type value from given `NSDictionary`.
+* `public func getInt8Value(forKey: String)` - It will provide `Int8` type value from given `NSDictionary`.
+* `public func getStringValue(forKey: String)` - It will provide `String` type value from given `NSDictionary`.
+* `public func getBooleanValue(forKey: String)` - It will provide `Bool` type value from given `NSDictionary`.
+
+
 ## Installation
 
 YZLibraries is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'YZLibraries'
+pod 'YZLibraries', ~> '0.1.4'
 ```
 
 
