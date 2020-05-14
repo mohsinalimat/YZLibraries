@@ -1,5 +1,8 @@
 //
-//  DictionaryExtention.swift
+//  YZDictionary.swift
+//  YZLibraries
+//
+//  Created by Vipul Patel on 14/05/20.
 //
 
 import Foundation

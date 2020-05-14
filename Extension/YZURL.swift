@@ -1,5 +1,8 @@
 //
-//  URLExtension.swift
+//  YZURL.swift
+//  YZLibraries
+//
+//  Created by Vipul Patel on 21/04/20.
 //
 
 import Foundation

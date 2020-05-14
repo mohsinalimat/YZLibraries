@@ -136,6 +136,24 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 **Functions:**
 * `public func newHeightUsing(_ baseHeight: CGFloat)` - Calculates if new textview height (based on content) is larger than a base height.
 
+### 7. YZString
+`YZString` file used to perform some string related manipulation using exention of `String`, `NSMutableAttributedString` and `NSAttributedString` to perform manipulation and provides following properties and functions.
+
+**Properties:**
+*  `isEmailAddressValid` - It is used to check email address valid or not, it will return `Bool` value.
+*  `trimmedString` - It is used to trimm characters like white space and new lines, it will return `String` value.
+*  `isOnlyNumericValue` - It is used to check given string has numeric value or not, it will return `Bool` value.
+*  `toDouble` - It is used to convert `String` type value to `Double` type value.
+*  `toFloat` - It is used to convert `String` type value to `toFloat` type value.
+*  `toInt` - It is used to convert `String` type value to `toInt` type value.
+*  `toInt64` - It is used to convert `String` type value to `toInt64` type value.
+*  `toInt32` - It is used to convert `String` type value to `toInt32` type value.
+*  `toInt16` - It is used to convert `String` type value to `toInt16` type value.
+*  `toInt8` - It is used to convert `String` type value to `toInt8` type value.
+*  `camelCaseLetter` - It is used to display string in camel case letter, it will return `String` type value.
+*  `htmlToAttributedString` - It is used to convert HTML to Attributed String.
+*  `htmlToString` -It is used to convert HTML to String.
+*  `initialCharactersFromWord` - It is used to get characters from word to display as user avatar.
 
 ## Installation
 
@@ -143,7 +161,7 @@ YZLibraries is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'YZLibraries', ~> '0.1.5'
+pod 'YZLibraries', ~> '0.1.6'
 ```
 
 

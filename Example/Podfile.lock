@@ -1,16 +1,28 @@
 PODS:
-  - YZLibraries (0.1.0)
+  - PhoneNumberKit (3.2.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.2.0)
+    - PhoneNumberKit/UIKit (= 3.2.0)
+  - PhoneNumberKit/PhoneNumberKitCore (3.2.0)
+  - PhoneNumberKit/UIKit (3.2.0):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - YZLibraries (0.1.5):
+    - PhoneNumberKit
 
 DEPENDENCIES:
   - YZLibraries (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - PhoneNumberKit
 
 EXTERNAL SOURCES:
   YZLibraries:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YZLibraries: baebaba1423c3e523f5900147c7c04a888ce9cc3
+  PhoneNumberKit: df411d46177d1492da84e10b6c093846dd861452
+  YZLibraries: 2bb8d6e56ad96ae8882cb96a119f82f80111a3fc
 
-PODFILE CHECKSUM: e57c3b1e93fd1e9b6bf06342f206c21b1eb42784
+PODFILE CHECKSUM: 3a3f65715a4e8080aa39089b5170ce2f3e104bc8
 
 COCOAPODS: 1.9.1
