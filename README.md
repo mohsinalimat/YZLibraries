@@ -121,13 +121,29 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 * `public func getBooleanValue(forKey: String)` - It will provide `Bool` type value from given `NSDictionary`.
 
 
+### 7. YZTextViews
+`YZTextViews` file contain multiple `UITextView` classes and extension of `UITextView` which provides following classes, properties, protocols and functions.
+
+**Classes:**
+*  `YZParentWidthTV` - It is used when, you want to design `UITextView` as per multiple device support and apply `widthRatio`.
+*  `YZParentHeightTV` - It is used when, you want to design `UITextView` as per multiple device support and apply `heightRatio`.
+*  `YZWithoutInsetTV` - It is used when, you want to design `UITextView` without any additional insets or padding.
+*  `YZLinkableTV` - It is used when, you want to get value for `UIDataDetectorTypes`.
+
+**Protocols:**
+*  `YZLinkableTVDelegate` - It is used when, you want to get value for `UIDataDetectorTypes`.
+
+**Functions:**
+* `public func newHeightUsing(_ baseHeight: CGFloat)` - Calculates if new textview height (based on content) is larger than a base height.
+
+
 ## Installation
 
 YZLibraries is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'YZLibraries', ~> '0.1.4'
+pod 'YZLibraries', ~> '0.1.5'
 ```
 
 
