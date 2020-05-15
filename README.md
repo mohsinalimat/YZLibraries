@@ -5,11 +5,13 @@
 [![Platform](https://img.shields.io/cocoapods/p/YZLibraries.svg?style=flat)](https://cocoapods.org/pods/YZLibraries)
 
 
+
 ## Features
 
 - [x] **YZAppConfig** class used to configure `designWidth, designHeight, navigationBarHeight`. 
 - [x] **YZCALayer** is type of **CALayer** extension to add or apply `applyShadow, addCornerRadius, addBorder, addGradient`.
 - [x] **YZUIView** is type of **UIView** extension to add or apply `addCornerRadius, applyShadow, addGradient, addConstraint, addBorder`
+
 
 
 ## Requirements
@@ -19,7 +21,10 @@
 - Swift 5.0+
 
 
+
 ## Usage
+
+
 
 ### 1. YZAppConfig Class
 
@@ -41,6 +46,8 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 *  `YZAppConfig.safeAreaInsets` - Provides `UIEdgeInsets` object using  `appDelegate.window!!.safeAreaInsets`.
 *  `YZAppConfig.safeAreaInsets` - Provides `UIEdgeInsets` object using  `appDelegate.window!!.safeAreaInsets`.
 
+
+
 ### 2. YZCALayer
 `YZCALayer` is extension of `CALayer` to `addCornerRadius`, `applyShadow`, `addGradient`, `addConstraintWithSuperView`, `addBorder`, `addDashBorder`. 
 
@@ -50,6 +57,8 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 * `public func addBorderBy(_ roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero, fillColor: UIColor? = .black, strokeColor: UIColor? = nil, lineWidth: CGFloat = 1)` - It will use to draw a border using `CAShapeLayer`, with specific parameters.
 * `public func addDashBorderBy(_ cornerRadius: CGFloat = .leastNonzeroMagnitude, fillColor: UIColor? = .black, dashColor: UIColor? = nil, dashHeight: CGFloat = 1, dashWidth: CGFloat = 5, spaceBetweenDash: CGFloat = 5)` - It will use to draw a dash border using `CAShapeLayer`, with specific parameters.
 * `public func addGradient(_ colors: [UIColor], gradientPoint: YZGradientPoint, roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero)` - It will use to add gradient colors using `CAGradientLayer`, with specific parameters.
+
+
 
 ### 3. YZUIView
 `YZUIView` is extension of `UIView` to `addCornerRadius`, `applyShadow`, `addGradient`, `addConstraintWithSuperView`, `addBorder`, `addDashBorder`. It will internally call `YZCALayer` functions to design `UIView` as per needed.
@@ -75,6 +84,7 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 * `public func addGradient(_ colors: [UIColor], gradientPoint: YZGradientPoint, roundingCorners: UIRectCorner = [.allCorners], cornerRadii: CGSize = .zero)` - It will use to add gradient colors inside `UIView`, with specific parameters.
 
 
+
 ### 4. YZArray
 `YZArray` is extension of `Array` collection data type to perform operation like `uniqueElements` or  `removeElements`. 
 
@@ -84,6 +94,7 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 **Functions:**
 * `public mutating func uniqueElementsInPlace()` - It will use to make unique elements array type without generating another copy of array type.
 * `public mutating func remove(_ elements: [Element])` - It will use to remove one or more than one provided elements from existing array.
+
 
 
 ### 5. YZURL
@@ -98,6 +109,7 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 * `public func getThumbnailFromVideo()` - It will use to get thumbnail image from given video file URL.
 * `public func compressVideo(_ outputURL: URL, handler:@escaping (_ exportSession: AVAssetExportSession?, _ compressVideoURL: URL?)-> Void)` - It will use to compress video for given URL.
 * `public func getValueForQuery(_ parameter: String)` - It will use to get value from given query parameter.
+
 
 
 ### 6. YZDictionary
@@ -121,20 +133,6 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 * `public func getBooleanValue(forKey: String)` - It will provide `Bool` type value from given `NSDictionary`.
 
 
-### 7. YZTextViews
-`YZTextViews` file contain multiple `UITextView` classes and extension of `UITextView` which provides following classes, properties, protocols and functions.
-
-**Classes:**
-*  `YZParentWidthTV` - It is used when, you want to design `UITextView` as per multiple device support and apply `widthRatio`.
-*  `YZParentHeightTV` - It is used when, you want to design `UITextView` as per multiple device support and apply `heightRatio`.
-*  `YZWithoutInsetTV` - It is used when, you want to design `UITextView` without any additional insets or padding.
-*  `YZLinkableTV` - It is used when, you want to get value for `UIDataDetectorTypes`.
-
-**Protocols:**
-*  `YZLinkableTVDelegate` - It is used when, you want to get value for `UIDataDetectorTypes`.
-
-**Functions:**
-* `public func newHeightUsing(_ baseHeight: CGFloat)` - Calculates if new textview height (based on content) is larger than a base height.
 
 ### 7. YZString
 `YZString` file used to perform some string related manipulation using exention of `String`, `NSMutableAttributedString` and `NSAttributedString` to perform manipulation and provides following properties and functions.
@@ -173,6 +171,67 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 
 
 
+### 8. YZButtons
+`YZButtons` file contain multiple `UIButton` classes and exenstion of `UIButton` which provides following classes and functions.
+
+**Classes:**
+*  `YZParentWidthBTN` - It is used when, you want to design `UIButton` as per multiple device support and apply `widthRatio`.
+*  `YZParentHeightBTN` - It is used when, you want to design `UIButton` as per multiple device support and apply `heightRatio`.
+
+**Functions:**
+* `public func setAttributed(_ texts: [String], attributes: [[NSAttributedString.Key : Any]], state: UIControl.State)` - It is used to set texts and it's attributes as per given parameters. It will internally call `NSAttributedString` function.
+
+
+
+### 9. YZLabels
+`YZLabels` file contain multiple `UILabel` classes and exenstion of `UILabel` which provides following classes, properties and functions.
+
+**Classes:**
+*  `YZParentWidthLBL` - It is used when, you want to design `UILabel` as per multiple device support and apply `widthRatio`.
+*  `YZParentHeightLBL` - It is used when, you want to design `UILabel` as per multiple device support and apply `heightRatio`.
+
+**Properties:**
+*  `isTruncated` - It is used to check given label is truncated or not. It will return `Bool` type value.
+
+**Functions:**
+* `public func addCharacters(_ spacing: CGFloat, alignment: NSTextAlignment = .natural, lineBreakMode: NSLineBreakMode = .byTruncatingTail, textFont: UIFont, foregroundColor: UIColor)` - It is used to add space between given characters as per given parameters. It will call internally `String` function.
+* `public func setAttributed(_ texts: [String], attributes: [[NSAttributedString.Key : AnyObject]])` - It is used to add texts and it's attributes.
+* `public func setVertical(_ lineSpacing: CGFloat, alignment: NSTextAlignment, lineBreakMode: NSLineBreakMode = .byTruncatingTail, textFont: UIFont, foregroundColor: UIColor)` - It is used to add verticle line space on given texts as per given parameters. It will call internally `String` function.
+* `public func addStrikeThroughLine(_ color: UIColor, textFont: UIFont, foregroundColor: UIColor)` - It is used to draw strike line on given texts. It will call internally `String` function.
+
+
+
+### 10. YZTextViews
+`YZTextViews` file contain multiple `UITextView` classes and extension of `UITextView` which provides following classes, properties, protocols and functions.
+
+**Classes:**
+*  `YZParentWidthTV` - It is used when, you want to design `UITextView` as per multiple device support and apply `widthRatio`.
+*  `YZParentHeightTV` - It is used when, you want to design `UITextView` as per multiple device support and apply `heightRatio`.
+*  `YZWithoutInsetTV` - It is used when, you want to design `UITextView` without any additional insets or padding.
+*  `YZLinkableTV` - It is used when, you want to get value for `UIDataDetectorTypes`.
+
+**Protocols:**
+*  `YZLinkableTVDelegate` - It is used when, you want to get value for `UIDataDetectorTypes`.
+
+**Functions:**
+* `public func newHeightUsing(_ baseHeight: CGFloat)` - Calculates if new textview height (based on content) is larger than a base height.
+
+
+
+### 11. YZTextFields
+`YZTextFields` file contain multiple `UITextField` classes and extension of `UITextField` which provides following classes and functions.
+
+**Classes:**
+*  `YZParentWidthTF` - It is used when, you want to design `UITextField` as per multiple device support and apply `widthRatio`.
+*  `YZParentHeightTF` - It is used when, you want to design `UITextField` as per multiple device support and apply `heightRatio`.
+*  `YZParentPaddingTF` - It is used to set padding for TextRect, PlaceHolderRect and EditingRect using `UIEdgeInsets`.
+
+**Functions:**
+* `public func addInputAccessory(_ text: String, textFont: UIFont, tintColor: UIColor? = nil, rect: CGRect = .zero)` - It is used to add input accessory view to `UITextField`.
+* `public func fixCaretPosition()` - It is used to move the carent to the correct position by removing the trailing whitespace.
+* `public func setAttributed(_ placeHolder: String?, color: UIColor, font: UIFont)` - It is used to set attributed place holder with given parameteres.
+
+
 
 ## Installation
 
@@ -180,13 +239,15 @@ YZLibraries is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'YZLibraries', ~> '0.1.6'
+pod 'YZLibraries', ~> '0.1.7'
 ```
+
 
 
 ## Author
 
 Vipul Patel (Yudiz Solutions Pvt. Ltd.), vipul.p@yudiz.in
+
 
 
 ## License

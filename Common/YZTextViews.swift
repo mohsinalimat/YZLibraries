@@ -39,11 +39,6 @@ public class YZWithoutInsetTV: UITextView {
         super.layoutSubviews()
         removeInsets()
     }
-    
-    func removeInsets() {
-        textContainerInset = UIEdgeInsets.zero
-        textContainer.lineFragmentPadding = 0
-    }
 }
 
 //MARK: - Protocol YZLinkableTVDelegate
@@ -101,5 +96,11 @@ extension UITextView {
         newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: height)
         
         return newFrame.height
+    }
+    
+    /// It is used to remove insets.
+    public func removeInsets() {
+        textContainerInset = UIEdgeInsets.zero
+        textContainer.lineFragmentPadding = 0
     }
 }

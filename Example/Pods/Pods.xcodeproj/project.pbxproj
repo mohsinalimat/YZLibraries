@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		00A1D284EB864BC7703497CFDA6459F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E833E966F837C34E8810B01049DA8953 /* Foundation.framework */; };
+		03647A28246E866A00ECD6E5 /* YZButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03647A27246E866A00ECD6E5 /* YZButtons.swift */; };
+		03647A2A246E880C00ECD6E5 /* YZLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03647A29246E880C00ECD6E5 /* YZLabels.swift */; };
+		03647A2C246E96D700ECD6E5 /* YZTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03647A2B246E96D700ECD6E5 /* YZTextFields.swift */; };
 		0554498C7238F4CF207CF1E6AFF40D22 /* RegexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B65693FD00BA45C57553E693501DDF /* RegexManager.swift */; };
 		05A0C8DF843BE79C18D1AF4E125D18AC /* Pods-YZLibraries_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 319991B3B827F03825BEADB26011D664 /* Pods-YZLibraries_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B55932FA71B8D3C5A1263ED2884FE49 /* MetadataParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CCEBD3F6952314F786916D34C88586 /* MetadataParsing.swift */; };
@@ -70,6 +73,9 @@
 
 /* Begin PBXFileReference section */
 		0135B62AA14F2F35029DAEA3106F3141 /* YZArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YZArray.swift; sourceTree = "<group>"; };
+		03647A27246E866A00ECD6E5 /* YZButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZButtons.swift; sourceTree = "<group>"; };
+		03647A29246E880C00ECD6E5 /* YZLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZLabels.swift; sourceTree = "<group>"; };
+		03647A2B246E96D700ECD6E5 /* YZTextFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZTextFields.swift; sourceTree = "<group>"; };
 		061805151FE07B086DBDAAF339D0A327 /* PhoneNumberParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumberParser.swift; path = PhoneNumberKit/PhoneNumberParser.swift; sourceTree = "<group>"; };
 		0E9562BF3015B1F0ADE35D4F6B54BE91 /* YZTextViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YZTextViews.swift; sourceTree = "<group>"; };
 		13EE49BCA306A1F7D025165CB6A25F38 /* TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = PhoneNumberKit/UI/TextField.swift; sourceTree = "<group>"; };
@@ -196,6 +202,9 @@
 			children = (
 				BF5AF57200619E95A7CEB448794667A1 /* YZAppConfig.swift */,
 				0E9562BF3015B1F0ADE35D4F6B54BE91 /* YZTextViews.swift */,
+				03647A27246E866A00ECD6E5 /* YZButtons.swift */,
+				03647A29246E880C00ECD6E5 /* YZLabels.swift */,
+				03647A2B246E96D700ECD6E5 /* YZTextFields.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -530,14 +539,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03647A2C246E96D700ECD6E5 /* YZTextFields.swift in Sources */,
 				BFE7F4EE5DFA494C25BF49CFC46CC3CD /* YZAppConfig.swift in Sources */,
 				6093185FCC4E80CF8E13030B9E109A40 /* YZArray.swift in Sources */,
 				918A5573336058C0DFD49B6266269466 /* YZCALayer.swift in Sources */,
+				03647A2A246E880C00ECD6E5 /* YZLabels.swift in Sources */,
 				3E1D7436B3681B85A9C71F8518DD590F /* YZDictionary.swift in Sources */,
 				A1D7FEB243C3F944765246F99A3F0899 /* YZLibraries-dummy.m in Sources */,
 				D277A331BE0F345CCE42326E9C09BD18 /* YZString.swift in Sources */,
 				D89B5B68BD4528AC9AD703DA376C6E27 /* YZTextViews.swift in Sources */,
 				998AAEF7FE22759F335EBF28FB78B384 /* YZUIView.swift in Sources */,
+				03647A28246E866A00ECD6E5 /* YZButtons.swift in Sources */,
 				74C6B35911A103D68FCF954A1853007F /* YZURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -729,7 +741,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 0.1.6;
+				MARKETING_VERSION = 0.1.7;
 				MODULEMAP_FILE = "Target Support Files/YZLibraries/YZLibraries.modulemap";
 				PRODUCT_MODULE_NAME = YZLibraries;
 				PRODUCT_NAME = YZLibraries;
@@ -885,7 +897,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 0.1.6;
+				MARKETING_VERSION = 0.1.7;
 				MODULEMAP_FILE = "Target Support Files/YZLibraries/YZLibraries.modulemap";
 				PRODUCT_MODULE_NAME = YZLibraries;
 				PRODUCT_NAME = YZLibraries;
