@@ -154,6 +154,25 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 *  `htmlToAttributedString` - It is used to convert HTML to Attributed String.
 *  `htmlToString` -It is used to convert HTML to String.
 *  `initialCharactersFromWord` - It is used to get characters from word to display as user avatar.
+* `isPhoneNumberValid` - It is used to check phoe number is valid or not. It will return `Bool` value.
+* `adjustedNationalNumber` - Adjust national number for display by adding leading zero if needed. Used for basic formatting functions.
+
+**Functions:**
+* `public func contains(_ find: String)` - It is used to check given string is contain or not.
+* `public func isEqual(_ otherString: String)` - It is used to compare two string.
+* `public func singleLineHeightFor(_ font: UIFont)` - It is used to calculate single line height for given string based on provided font.
+* `public func heightForFixed(_ width: CGFloat, font: UIFont)` - It is used to calculate height for given string based on fixed width.
+* `public func widthForFixed(_ height: CGFloat, font: UIFont)` - It is used to calculate width for given string based on fixed height.
+* `public func capitalizingFirstLetter()` - It is used to capitalizing first letter of given string or word.
+* `public func strikeThroughLine(_ color: UIColor, textFont: UIFont, foregroundColor: UIColor)` - It is used to draw strike line on given string. It will call internally `NSMutableAttributedString` function.
+* `public func addVertical(_ lineSpacing: CGFloat, alignment: NSTextAlignment, lineBreakMode: NSLineBreakMode = .byTruncatingTail, textFont: UIFont, foregroundColor: UIColor)` - It is used to add verticle line space on given string as per given parameters. It will call internally `NSMutableAttributedString` function.
+* `public func addCharacters(_ spacing: CGFloat, alignment: NSTextAlignment = .natural, lineBreakMode: NSLineBreakMode = .byTruncatingTail, textFont: UIFont, foregroundColor: UIColor)` - It is used to add space between given characters as per given parameters. It will call internally `NSMutableAttributedString` function.
+* `public func setString(_ alignment: NSTextAlignment = .natural)` - It is used to set string alignment, as per given parameter. It will call internally `NSMutableAttributedString` function.
+* `public func addCharacters(_ shadowColor: UIColor, shadowBlurRadius: CGFloat, shadowOffset: CGSize = .zero, textFont: UIFont, foregroundColor: UIColor)` - It will use to apply drop shadow effects to characters
+* `public func setString(_ alignment: NSTextAlignment = .natural)` - It is used to set string alignment, as per given parameter. It will call internally `NSMutableAttributedString` function.
+
+
+
 
 ## Installation
 

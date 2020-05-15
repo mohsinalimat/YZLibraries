@@ -102,7 +102,7 @@ extension String {
         return true
     }
 
-    /// Adjust national number for display by adding leading zero if needed. Used for basic formatting functions
+    /// Adjust national number for display by adding leading zero if needed. Used for basic formatting functions.
     public var adjustedNationalNumber: String? {
         let numkit = PhoneNumberKit()
         do{

@@ -80,21 +80,21 @@
 		285BAABE0057F1E4C1926247D705BD69 /* PhoneNumberKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PhoneNumberKit-Info.plist"; sourceTree = "<group>"; };
 		2880E4AF77817F09CA2AF90460C82001 /* Pods-YZLibraries_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YZLibraries_Example-dummy.m"; sourceTree = "<group>"; };
 		2FC712A5F2E017B940DE16F0BEDE8162 /* Formatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Formatter.swift; path = PhoneNumberKit/Formatter.swift; sourceTree = "<group>"; };
-		2FDAD16E7B33AF57069C92343E687ED9 /* Pods_YZLibraries_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YZLibraries_Example.framework; path = "Pods-YZLibraries_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FDAD16E7B33AF57069C92343E687ED9 /* Pods_YZLibraries_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YZLibraries_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		319991B3B827F03825BEADB26011D664 /* Pods-YZLibraries_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YZLibraries_Example-umbrella.h"; sourceTree = "<group>"; };
-		31A70CA18956C8635D7985AB87157414 /* YZLibraries.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YZLibraries.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		31A70CA18956C8635D7985AB87157414 /* YZLibraries.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = YZLibraries.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3CF8B0CD5371A7498EAFB96BCADB6AB8 /* PhoneNumberFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumberFormatter.swift; path = PhoneNumberKit/PhoneNumberFormatter.swift; sourceTree = "<group>"; };
 		3D7F85A67C69D4E1EF0B16B40282F8B6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		40D9C743A36C83244B71004D088545B3 /* MetadataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetadataManager.swift; path = PhoneNumberKit/MetadataManager.swift; sourceTree = "<group>"; };
 		4672BE9666C1A772C24E8446FA347583 /* NSRegularExpression+Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSRegularExpression+Swift.swift"; path = "PhoneNumberKit/NSRegularExpression+Swift.swift"; sourceTree = "<group>"; };
 		4D2E796BA7B58A45CC6358E32AE04B88 /* PhoneNumberKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PhoneNumberKit.release.xcconfig; sourceTree = "<group>"; };
 		50F4FF57F8FE933C14CD4D894918F488 /* YZLibraries-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YZLibraries-Info.plist"; sourceTree = "<group>"; };
-		5201F6C379E9576C7E3290DE2CB5E312 /* YZLibraries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YZLibraries.framework; path = YZLibraries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5201F6C379E9576C7E3290DE2CB5E312 /* YZLibraries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YZLibraries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5973AFE5982428319886B58EB0B433F8 /* Pods-YZLibraries_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YZLibraries_Example.modulemap"; sourceTree = "<group>"; };
 		5A025D4BF6AE5087EA6C3277E0C8867B /* YZURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YZURL.swift; sourceTree = "<group>"; };
 		633E0DC5CEF21C62257E126B77793A7A /* PhoneNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumber.swift; path = PhoneNumberKit/PhoneNumber.swift; sourceTree = "<group>"; };
 		67467976A6E876F4B8B44425167A0152 /* YZLibraries.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YZLibraries.modulemap; sourceTree = "<group>"; };
-		69681285C13FB58876DD5727BCB2DC85 /* PhoneNumberKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PhoneNumberKit.framework; path = PhoneNumberKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69681285C13FB58876DD5727BCB2DC85 /* PhoneNumberKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhoneNumberKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72CD9A27486B314FA202CC86F1D83AC0 /* Pods-YZLibraries_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YZLibraries_Example-Info.plist"; sourceTree = "<group>"; };
 		79766AB8589B3D340D88FA7EACFC2E04 /* Pods-YZLibraries_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YZLibraries_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8458D72384DB3E9A17686F412D45D851 /* YZLibraries-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YZLibraries-prefix.pch"; sourceTree = "<group>"; };
@@ -103,12 +103,12 @@
 		9089219ABD1E899365F96BC797692BEA /* PhoneNumberKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PhoneNumberKit-umbrella.h"; sourceTree = "<group>"; };
 		914D68297702E79A7A516E65A2FB1CD2 /* YZUIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YZUIView.swift; sourceTree = "<group>"; };
 		97DF647AE0029AF6C26A404C14CA4E89 /* YZString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YZString.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4C19435EE8D9E69FAF2C808F7150A93 /* YZLibraries-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YZLibraries-dummy.m"; sourceTree = "<group>"; };
 		A93E591BDBEE2F199C9C33A821CA26CA /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = PhoneNumberKit/Constants.swift; sourceTree = "<group>"; };
 		AD32336D736FC277766CB2FB1A7993F2 /* ParseManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseManager.swift; path = PhoneNumberKit/ParseManager.swift; sourceTree = "<group>"; };
 		B0CCEBD3F6952314F786916D34C88586 /* MetadataParsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetadataParsing.swift; path = PhoneNumberKit/MetadataParsing.swift; sourceTree = "<group>"; };
-		B2A139F7F53FDFB6B579F1F179956257 /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; includeInIndex = 1; name = PhoneNumberMetadata.json; path = PhoneNumberKit/Resources/PhoneNumberMetadata.json; sourceTree = "<group>"; };
+		B2A139F7F53FDFB6B579F1F179956257 /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = PhoneNumberMetadata.json; path = PhoneNumberKit/Resources/PhoneNumberMetadata.json; sourceTree = "<group>"; };
 		B5B711F40B169D854039DF8FBBCDEC7A /* MetadataTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetadataTypes.swift; path = PhoneNumberKit/MetadataTypes.swift; sourceTree = "<group>"; };
 		B8C78C3761EC6336BCC88E74451EDCCA /* Pods-YZLibraries_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YZLibraries_Example-frameworks.sh"; sourceTree = "<group>"; };
 		BB6BBA78D4F117CFEF92C19476844969 /* Pods-YZLibraries_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YZLibraries_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -118,13 +118,13 @@
 		CBAC366E95B7BF653D90712E5F0D37E5 /* PhoneNumberKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PhoneNumberKit-dummy.m"; sourceTree = "<group>"; };
 		D788D2776EDF9049210561C48637AA97 /* PhoneNumberKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PhoneNumberKit.modulemap; sourceTree = "<group>"; };
 		DD666E2D94DC702B70946292F8DC72BA /* CountryCodePickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryCodePickerViewController.swift; path = PhoneNumberKit/UI/CountryCodePickerViewController.swift; sourceTree = "<group>"; };
-		DE4A1A11A43FD64F14A824F01D724265 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DE4A1A11A43FD64F14A824F01D724265 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E5B65693FD00BA45C57553E693501DDF /* RegexManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegexManager.swift; path = PhoneNumberKit/RegexManager.swift; sourceTree = "<group>"; };
 		E833E966F837C34E8810B01049DA8953 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E92FC0E2F91A0CCEB644557DFBDEA2C3 /* YZDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YZDictionary.swift; sourceTree = "<group>"; };
 		ED152F9AE362A418814076C34791BF4D /* Pods-YZLibraries_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YZLibraries_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F45014BBAD765483B2F3E9D926B7F65F /* YZLibraries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YZLibraries.debug.xcconfig; sourceTree = "<group>"; };
-		F67BCED36816DE2A0AABF54D2787F01E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F67BCED36816DE2A0AABF54D2787F01E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FD725B17BA7F42F4A8630ECC35C28DBB /* PhoneNumberKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PhoneNumberKit-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,7 +197,6 @@
 				BF5AF57200619E95A7CEB448794667A1 /* YZAppConfig.swift */,
 				0E9562BF3015B1F0ADE35D4F6B54BE91 /* YZTextViews.swift */,
 			);
-			name = Common;
 			path = Common;
 			sourceTree = "<group>";
 		};
@@ -265,7 +264,6 @@
 				914D68297702E79A7A516E65A2FB1CD2 /* YZUIView.swift */,
 				5A025D4BF6AE5087EA6C3277E0C8867B /* YZURL.swift */,
 			);
-			name = Extension;
 			path = Extension;
 			sourceTree = "<group>";
 		};
@@ -323,7 +321,6 @@
 				ED98B2832442648D14EC2E15E1ABCA11 /* Support Files */,
 				50A44D7D2C2B65C3DDB4E567E83234A4 /* UIKit */,
 			);
-			name = PhoneNumberKit;
 			path = PhoneNumberKit;
 			sourceTree = "<group>";
 		};
@@ -732,6 +729,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.1.6;
 				MODULEMAP_FILE = "Target Support Files/YZLibraries/YZLibraries.modulemap";
 				PRODUCT_MODULE_NAME = YZLibraries;
 				PRODUCT_NAME = YZLibraries;
@@ -861,8 +859,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -888,6 +885,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.1.6;
 				MODULEMAP_FILE = "Target Support Files/YZLibraries/YZLibraries.modulemap";
 				PRODUCT_MODULE_NAME = YZLibraries;
 				PRODUCT_NAME = YZLibraries;
