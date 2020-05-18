@@ -9,10 +9,11 @@
 import UIKit
 import YZLibraries
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, YZUserTapDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 }
 

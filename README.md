@@ -294,6 +294,9 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 ### 17. YZConstrainedViews
 `YZConstrainedViews` file contains multiple classes used to set as parent class for application, which provide following classes.
 
+**Protocol:**
+* `YZUserTapDelegate` - It is used to get user tap event on text for tableCell, collectionCell, and headerFooter views.
+
 **Classes:**
 *  `YZParentControl` - It is a sub-class of `UIControl` use to set as parent class.
 *  `YZParentCVC` - It is a sub-class of `UICollectionViewCell` use to set as parent class.

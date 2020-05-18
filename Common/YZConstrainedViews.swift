@@ -7,6 +7,14 @@
 
 import UIKit
 
+//MARK: - Class YZUserTapDelegate
+/// It is used to get user tap event on text for tableCell, collectionCell, and headerFooter views.
+@objc public protocol YZUserTapDelegate: class {
+    @objc optional func didTapOn(_ text: String, tableCell: YZParentTVC?, anyObject: Any?)
+    @objc optional func didTapOn(_ text: String, collectionCell: YZParentCVC?, anyObject: Any?)
+    @objc optional func didTapOn(_ text: String, headerFooter: YZParentHFV?, anyObject: Any?)
+}
+
 //MARK: - Class YZParentControl
 /// It is a sub-class of `UIControl` use to set as parent class.
 public class YZParentControl: UIControl {
