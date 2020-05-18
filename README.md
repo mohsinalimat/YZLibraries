@@ -331,13 +331,24 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 
 
 
+### 19. YZNumbers
+`YZNumbers` class is used to manipulate some number related operations, following properties and functions.
+
+**Properties:**
+* `suffixNumber` - It is used to convert `Double` value to `String` in K(Thousands) and M(Million) forms.
+
+**Functions:**
+* `public mutating func roundTo(_ places: Int)` - It is used to rounds the `Double` value to decimal places value.
+
+
+
 ## Installation
 
 YZLibraries is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'YZLibraries', '~> 0.2.0'
+pod 'YZLibraries', '~> 0.2.1'
 ```
 
 

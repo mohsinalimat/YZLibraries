@@ -374,7 +374,7 @@
 				DEVELOPMENT_TEAM = 5B5QP29D73;
 				INFOPLIST_FILE = YZLibraries/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.1;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yudiz.vips.yzlibraries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,7 +395,7 @@
 				DEVELOPMENT_TEAM = 5B5QP29D73;
 				INFOPLIST_FILE = YZLibraries/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.1;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yudiz.vips.yzlibraries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
