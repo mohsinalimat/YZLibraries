@@ -233,13 +233,99 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 
 
 
+### 12. YZColor
+`YZColor` file contain  `UIColor` extension which provides following functions.
+
+**Functions:**
+* `public convenience init(_ hexaValue: String, alpha: CGFloat = 1.0)` - It is used to initialize `UIColor` object from given hexa decimal value and alpha value.
+* `public static func initWith(_ red: Int, green: Int, blue: Int, alpha: CGFloat)` - It is used to initialize `UIColor` object from given RGBA value.
+* `public func brightenedBy(_ factor: CGFloat)` - It is used to add bright color effect on exisiting color.
+
+
+
+### 13. YZImage
+`YZImage` file contain  `UIImage` extension which provides following properties and functions.
+
+**Properties:**
+*  `fixedOrientation` - It is used to fixed orientation of given image.
+
+**Functions:**
+* `public static func generateQRCodeFrom(_ string: String)` - It is used to generate QRCode image from given string
+* `public static func getSquareImage()` - It is used to generate square image.
+* `public func resizeImageWith(_ width: CGFloat, height: CGFloat)` - It is used to resize image with given parameters.
+* `public func scaleTo(_ newSize: CGSize, isAspectFill: Bool = true)` - It is used to scales an image to fit within a bounds with a size governed by the passed size. Also keeps the aspect ratio.
+* `public func scaleAndManageAspectRatio(_ width: CGFloat)` - It is used to reduce image resolution and maintain aspect ratio.
+
+
+
+### 14. YZIndexPath
+`YZIndexPath` file contain  `IndexPath` extension which provides functions.
+
+**Functions:**
+* `public static func indexPathForCellContaining(_ view: UIView, tableView: UITableView)` - It is used to get `IndexPath` from `UITableView`.
+* `public static func indexPathForCellContaining(_ view: UIView, collectionView: UICollectionView)` - It is used to get `IndexPath` from `UICollectionView`.
+
+
+
+### 15. YZViewController
+`YZViewController` file contain  multiple extension of `UIWindow`, `UIViewController`, and `UIApplication` which provides following properties and functions.
+
+**Properties:**
+*  `currentVisibleViewController` - It is used to get current visible `UIViewController` for `UIWindow`, `UIViewController`, and `UIApplication`.
+
+**Functions:**
+* `public static func getCurrentVisibleVCFor(_ vc: UIViewController)` - It is used to get current visible `UIViewController` for given `UIViewController`.
+
+
+
+### 16. YZActivityIndicator
+`YZActivityIndicator` class used to initialize custom indicator view using image, which have following properties and functions.
+
+**Properties:**
+*  `isAnimating` - It will provide `Bool` value to check isAnimating or not.
+*  `hidesWhenStopped` - It will used to set property to hide indicator view when it is stopped animation.
+
+**Functions:**
+* `public func startAnimating()` - It is used to start animation.
+* `public func stopAnimating()` - It is used to stop animation.
+
+
+
+### 17. YZConstrainedViews
+`YZConstrainedViews` file contains multiple classes used to set as parent class for application, which provide following classes.
+
+**Classes:**
+*  `YZParentControl` - It is a sub-class of `UIControl` use to set as parent class.
+*  `YZParentCVC` - It is a sub-class of `UICollectionViewCell` use to set as parent class.
+*  `YZParentCRV` - It is a sub-class of `UICollectionReusableView` use to set as parent class.
+*  `YZParentHFV` - It is a sub-class of `UITableViewHeaderFooterView` use to set as parent class.
+*  `YZParentTVC` - It is a sub-class of `UITableViewCell` use to set as parent class.
+*  `YZParentView` - It is a sub-class of `UIView` use to set as parent class.
+
+
+
+### 17. YZLinkLabel
+`YZLinkLabel` class used to detect mention, hash tags or URLs from given string which provide following properties and functions.
+
+**Properties:**
+*  `arrOfHashTags` - It is used to get number of count for hash tags.
+*  `arrOfMentions` - It is used to get number of count for mentions tags.
+*  `arrOfURLs` - It is used to get number of count for URLs.
+*  `delegate` - It is used to set delegate to get events.
+
+**Functions:**
+* `public func set(_ attributedString: NSAttributedString, linebreak : NSLineBreakMode = .byTruncatingTail)` - It is used to set attributed texts.
+
+
+
+
 ## Installation
 
 YZLibraries is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'YZLibraries', ~> '0.1.7'
+pod 'YZLibraries', ~> '0.1.8'
 ```
 
 

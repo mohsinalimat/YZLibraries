@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		00A1D284EB864BC7703497CFDA6459F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E833E966F837C34E8810B01049DA8953 /* Foundation.framework */; };
+		03574317247243AF005622DD /* YZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03574313247243AD005622DD /* YZColor.swift */; };
+		03574318247243AF005622DD /* YZIndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03574314247243AE005622DD /* YZIndexPath.swift */; };
+		03574319247243AF005622DD /* YZImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03574315247243AE005622DD /* YZImage.swift */; };
+		0357431A247243AF005622DD /* YZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03574316247243AE005622DD /* YZViewController.swift */; };
+		0357431C247255FB005622DD /* YZActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0357431B247255FB005622DD /* YZActivityIndicator.swift */; };
+		0357431E247258A4005622DD /* YZConstrainedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0357431D247258A4005622DD /* YZConstrainedViews.swift */; };
+		0357432024725C7E005622DD /* YZLinkLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0357431F24725C7E005622DD /* YZLinkLable.swift */; };
 		03647A28246E866A00ECD6E5 /* YZButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03647A27246E866A00ECD6E5 /* YZButtons.swift */; };
 		03647A2A246E880C00ECD6E5 /* YZLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03647A29246E880C00ECD6E5 /* YZLabels.swift */; };
 		03647A2C246E96D700ECD6E5 /* YZTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03647A2B246E96D700ECD6E5 /* YZTextFields.swift */; };
@@ -73,6 +80,13 @@
 
 /* Begin PBXFileReference section */
 		0135B62AA14F2F35029DAEA3106F3141 /* YZArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YZArray.swift; sourceTree = "<group>"; };
+		03574313247243AD005622DD /* YZColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZColor.swift; sourceTree = "<group>"; };
+		03574314247243AE005622DD /* YZIndexPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZIndexPath.swift; sourceTree = "<group>"; };
+		03574315247243AE005622DD /* YZImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZImage.swift; sourceTree = "<group>"; };
+		03574316247243AE005622DD /* YZViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZViewController.swift; sourceTree = "<group>"; };
+		0357431B247255FB005622DD /* YZActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZActivityIndicator.swift; sourceTree = "<group>"; };
+		0357431D247258A4005622DD /* YZConstrainedViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZConstrainedViews.swift; sourceTree = "<group>"; };
+		0357431F24725C7E005622DD /* YZLinkLable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZLinkLable.swift; sourceTree = "<group>"; };
 		03647A27246E866A00ECD6E5 /* YZButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZButtons.swift; sourceTree = "<group>"; };
 		03647A29246E880C00ECD6E5 /* YZLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZLabels.swift; sourceTree = "<group>"; };
 		03647A2B246E96D700ECD6E5 /* YZTextFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZTextFields.swift; sourceTree = "<group>"; };
@@ -205,6 +219,9 @@
 				03647A27246E866A00ECD6E5 /* YZButtons.swift */,
 				03647A29246E880C00ECD6E5 /* YZLabels.swift */,
 				03647A2B246E96D700ECD6E5 /* YZTextFields.swift */,
+				0357431B247255FB005622DD /* YZActivityIndicator.swift */,
+				0357431D247258A4005622DD /* YZConstrainedViews.swift */,
+				0357431F24725C7E005622DD /* YZLinkLable.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -272,6 +289,10 @@
 				97DF647AE0029AF6C26A404C14CA4E89 /* YZString.swift */,
 				914D68297702E79A7A516E65A2FB1CD2 /* YZUIView.swift */,
 				5A025D4BF6AE5087EA6C3277E0C8867B /* YZURL.swift */,
+				03574313247243AD005622DD /* YZColor.swift */,
+				03574315247243AE005622DD /* YZImage.swift */,
+				03574314247243AE005622DD /* YZIndexPath.swift */,
+				03574316247243AE005622DD /* YZViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -539,16 +560,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0357431C247255FB005622DD /* YZActivityIndicator.swift in Sources */,
 				03647A2C246E96D700ECD6E5 /* YZTextFields.swift in Sources */,
 				BFE7F4EE5DFA494C25BF49CFC46CC3CD /* YZAppConfig.swift in Sources */,
 				6093185FCC4E80CF8E13030B9E109A40 /* YZArray.swift in Sources */,
+				0357431A247243AF005622DD /* YZViewController.swift in Sources */,
 				918A5573336058C0DFD49B6266269466 /* YZCALayer.swift in Sources */,
+				0357432024725C7E005622DD /* YZLinkLable.swift in Sources */,
 				03647A2A246E880C00ECD6E5 /* YZLabels.swift in Sources */,
+				03574317247243AF005622DD /* YZColor.swift in Sources */,
+				03574318247243AF005622DD /* YZIndexPath.swift in Sources */,
+				0357431E247258A4005622DD /* YZConstrainedViews.swift in Sources */,
 				3E1D7436B3681B85A9C71F8518DD590F /* YZDictionary.swift in Sources */,
 				A1D7FEB243C3F944765246F99A3F0899 /* YZLibraries-dummy.m in Sources */,
 				D277A331BE0F345CCE42326E9C09BD18 /* YZString.swift in Sources */,
 				D89B5B68BD4528AC9AD703DA376C6E27 /* YZTextViews.swift in Sources */,
 				998AAEF7FE22759F335EBF28FB78B384 /* YZUIView.swift in Sources */,
+				03574319247243AF005622DD /* YZImage.swift in Sources */,
 				03647A28246E866A00ECD6E5 /* YZButtons.swift in Sources */,
 				74C6B35911A103D68FCF954A1853007F /* YZURL.swift in Sources */,
 			);
@@ -741,7 +769,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 0.1.7;
+				MARKETING_VERSION = 0.1.8;
 				MODULEMAP_FILE = "Target Support Files/YZLibraries/YZLibraries.modulemap";
 				PRODUCT_MODULE_NAME = YZLibraries;
 				PRODUCT_NAME = YZLibraries;
@@ -897,7 +925,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 0.1.7;
+				MARKETING_VERSION = 0.1.8;
 				MODULEMAP_FILE = "Target Support Files/YZLibraries/YZLibraries.modulemap";
 				PRODUCT_MODULE_NAME = YZLibraries;
 				PRODUCT_NAME = YZLibraries;
