@@ -321,6 +321,15 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 
 
 
+### 18. YZPermission
+`YZPermission` class is used to check permissions like camera access, photo library access etc... which have following functions.
+
+**Functions:**
+* `public func cameraAccess(permissionWithStatus block: @escaping PermissionStatus)` - It is used to check camera access permission.
+* `public func photoLibraryAccess(permissionWithStatus block: @escaping PermissionStatus)` - It is used to check photo library access permission.
+* `public func locationAccess(permissionWithStatus block: @escaping PermissionStatus)` - It is used to check location access permission.
+
+
 
 ## Installation
 
@@ -328,7 +337,7 @@ YZLibraries is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'YZLibraries', ~> '0.1.9'
+pod 'YZLibraries', '~> 0.2.0'
 ```
 
 

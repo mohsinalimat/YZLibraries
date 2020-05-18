@@ -2,7 +2,7 @@
 # Be sure to run `pod lib lint YZLibraries.podspec' to ensure this is a
 Pod::Spec.new do |s|
   s.name                    = 'YZLibraries'
-  s.version                 = '0.1.9'
+  s.version                 = '0.2.0'
   s.summary                 = 'YZLibraries is design and developed for Yudiz Solutions Pvt. Ltd.'
   s.description             = <<-DESC
   "YZLibraries is useful for Junior iOS developer and trainee, so it easy can be easy to develop application and reduce code lines."
