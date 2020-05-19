@@ -10,7 +10,7 @@ import QuartzCore
 
 //MARK:- Class YZActivityIndicator
 /// It is used to prepare indicator view
-class YZActivityIndicator: UIView {
+public class YZActivityIndicator: UIView {
     
     /// It will provide `Bool` value to check isAnimating or not.
     public var isAnimating : Bool = false

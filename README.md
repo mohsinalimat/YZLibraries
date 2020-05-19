@@ -348,7 +348,7 @@ YZLibraries is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'YZLibraries', '~> 0.2.1'
+pod 'YZLibraries', '~> 0.2.2'
 ```
 
 
