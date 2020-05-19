@@ -72,6 +72,15 @@ extension CALayer {
                               shadowOffset: CGSize = .zero,
                               shadowColor: UIColor, shadowRadius: CGFloat = 3,
                               shadowOpacity:Float = 0) {
+        if let subLayers = sublayers, subLayers.isEmpty == false {
+            for layer in subLayers {
+                if layer is CAShapeLayer {
+                    layer.removeFromSuperlayer()
+                    break
+                }
+            }
+        }
+
         let layerShadow = CAShapeLayer()
         let cgPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: roundingCorners, cornerRadii: cornerRadii).cgPath
         layerShadow.path = cgPath
