@@ -17,7 +17,7 @@ import UIKit
 
 //MARK: - Class YZParentControl
 /// It is a sub-class of `UIControl` use to set as parent class.
-public class YZParentControl: UIControl {
+open class YZParentControl: UIControl {
     @IBOutlet public weak var viewContainer: UIView?
     @IBOutlet public var constraintHeightOfSeparator: NSLayoutConstraint?
     @IBOutlet public var horizontalConstraints: [NSLayoutConstraint]?
@@ -53,7 +53,7 @@ public class YZParentControl: UIControl {
 
 //MARK: - Class YZParentCVC
 /// It is a sub-class of `UICollectionViewCell` use to set as parent class.
-public class YZParentCVC: UICollectionViewCell {
+open class YZParentCVC: UICollectionViewCell {
     @IBOutlet public weak var viewContainer: UIView?
     @IBOutlet public var constraintHeightOfSeparator: NSLayoutConstraint?
     @IBOutlet public var horizontalConstraints: [NSLayoutConstraint]?
@@ -88,7 +88,7 @@ public class YZParentCVC: UICollectionViewCell {
 
 //MARK: - Class YZParentCRV
 /// It is a sub-class of `UICollectionReusableView` use to set as parent class.
-public class YZParentCRV: UICollectionReusableView {
+open class YZParentCRV: UICollectionReusableView {
     @IBOutlet public weak var viewContainer: UIView?
     @IBOutlet public var constraintHeightOfSeparator: NSLayoutConstraint?
     @IBOutlet public var horizontalConstraints: [NSLayoutConstraint]?
@@ -163,7 +163,7 @@ open class YZParentHFV: UITableViewHeaderFooterView {
 
 //MARK: - Class YZParentTVC
 /// It is a sub-class of `UITableViewCell` use to set as parent class.
-public class YZParentTVC: UITableViewCell {
+open class YZParentTVC: UITableViewCell {
     @IBOutlet public weak var viewContainer: UIView?
     @IBOutlet public var constraintHeightOfSeparator: NSLayoutConstraint?
     @IBOutlet public var horizontalConstraints: [NSLayoutConstraint]?
@@ -203,7 +203,7 @@ public class YZParentTVC: UITableViewCell {
 
 //MARK: - Class YZParentView
 /// It is a sub-class of `UIView` use to set as parent class.
-public class YZParentView: UIView {
+open class YZParentView: UIView {
     @IBOutlet public weak var viewContainer: UIView?
     @IBOutlet public var constraintHeightOfSeparator: NSLayoutConstraint?
     @IBOutlet public var horizontalConstraints: [NSLayoutConstraint]?
