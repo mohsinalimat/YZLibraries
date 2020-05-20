@@ -15,6 +15,13 @@ import UIKit
     @objc optional func didTapOn(_ text: String, headerFooter: YZParentHFV?, anyObject: Any?)
 }
 
+//MARK: - Protocol YZTextFieldDelegate
+/// It is used to get `UITextField` events.
+@objc public protocol YZTextFieldDelegate: class {
+    @objc optional func textFieldDidChange(_ tableCell: YZParentTVC, anyObject: Any?)
+    @objc optional func textFieldShouldReturn(_ tableCell: YZParentTVC?, anyObject: Any?) -> Bool
+}
+
 //MARK: - Class YZParentControl
 /// It is a sub-class of `UIControl` use to set as parent class.
 open class YZParentControl: UIControl {

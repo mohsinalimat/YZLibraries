@@ -295,6 +295,7 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 
 **Protocol:**
 * `YZUserTapDelegate` - It is used to get user tap event on text for tableCell, collectionCell, and headerFooter views.
+* `YZTextFieldDelegate` - It is used to get `UITextField` events.
 
 **Classes:**
 *  `YZParentControl` - It is a sub-class of `UIControl` use to set as parent class.
@@ -347,7 +348,7 @@ YZLibraries is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'YZLibraries', '~> 0.2.6'
+pod 'YZLibraries', '~> 0.2.7'
 ```
 
 
