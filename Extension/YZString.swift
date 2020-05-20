@@ -226,12 +226,17 @@ extension String {
         return attributedString
     }
     
-    /// It is used to set string alignment, as per given parameter. It will call internally `NSMutableAttributedString` function.
-    /// - Parameter alignment: `NSTextAlignment` type object to define text alignment. Default value is **.natural**.
+    /// It is used to set string alignment, font, foreground color as per given parameter. It will call internally `NSMutableAttributedString` function.
+    /// - Parameters:
+    ///   - alignment: `NSTextAlignment` type object to define text alignment. Default value is **.natural**.
+    ///   - textFont: `UIFont` type object. Default value is **nil**.
+    ///   - foregroundColor: `UIColor` type object. Default value is **nil**.
     /// - Returns: It will return `NSAttributedString`.
-    public func setString(_ alignment: NSTextAlignment = .natural) -> NSAttributedString {
+    public func setString(_ alignment: NSTextAlignment = .natural, textFont: UIFont? = nil, foregroundColor: UIColor? = nil) -> NSAttributedString {
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = alignment
         let attributedString = NSMutableAttributedString(string: self)
-        attributedString.setAttributedString(alignment)
+        attributedString.addAttributes(paragraphStyle, textFont: textFont, foregroundColor: foregroundColor, range: NSMakeRange(0, attributedString.length))
         return attributedString
     }
 

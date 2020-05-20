@@ -165,9 +165,8 @@ YZAppConfig.initialise(375, designHeight: 667, navigationBarHeight: 88)
 * `public func strikeThroughLine(_ color: UIColor, textFont: UIFont, foregroundColor: UIColor)` - It is used to draw strike line on given string. It will call internally `NSMutableAttributedString` function.
 * `public func addVertical(_ lineSpacing: CGFloat, alignment: NSTextAlignment, lineBreakMode: NSLineBreakMode = .byTruncatingTail, textFont: UIFont, foregroundColor: UIColor)` - It is used to add verticle line space on given string as per given parameters. It will call internally `NSMutableAttributedString` function.
 * `public func addCharacters(_ spacing: CGFloat, alignment: NSTextAlignment = .natural, lineBreakMode: NSLineBreakMode = .byTruncatingTail, textFont: UIFont, foregroundColor: UIColor)` - It is used to add space between given characters as per given parameters. It will call internally `NSMutableAttributedString` function.
-* `public func setString(_ alignment: NSTextAlignment = .natural)` - It is used to set string alignment, as per given parameter. It will call internally `NSMutableAttributedString` function.
+* `public func setString(_ alignment: NSTextAlignment = .natural, textFont: UIFont? = nil, foregroundColor: UIColor? = nil)` - It is used to set string alignment, font, foreground color as per given parameter. It will call internally `NSMutableAttributedString` function.
 * `public func addCharacters(_ shadowColor: UIColor, shadowBlurRadius: CGFloat, shadowOffset: CGSize = .zero, textFont: UIFont, foregroundColor: UIColor)` - It will use to apply drop shadow effects to characters
-* `public func setString(_ alignment: NSTextAlignment = .natural)` - It is used to set string alignment, as per given parameter. It will call internally `NSMutableAttributedString` function.
 
 
 
@@ -348,7 +347,7 @@ YZLibraries is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'YZLibraries', '~> 0.2.5'
+pod 'YZLibraries', '~> 0.2.6'
 ```
 
 
