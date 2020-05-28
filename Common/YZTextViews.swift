@@ -77,7 +77,7 @@ public class YZLinkableTV: YZWithoutInsetTV, UITextViewDelegate {
 }
 
 
-//MARK: - Additional Method(s)
+//MARK: - UITextView Extension
 extension UITextView {
     /**
      Calculates if new textview height (based on content) is larger than a base height
@@ -102,5 +102,25 @@ extension UITextView {
     public func removeInsets() {
         textContainerInset = UIEdgeInsets.zero
         textContainer.lineFragmentPadding = 0
+    }
+    
+    /// It is used to add input accessory view to `UITextView`.
+    /// - Parameters:
+    ///   - text: `String` type value to define accessory `UIBarButtonItem` text.
+    ///   - textFont: `UIFont` type object to define accessory `UIBarButtonItem` font.
+    ///   - tintColor: `UIColor` tyepe object to set tint color of accessory `UIBarButtonItem`
+    ///   - rect: `CGRect` type object to set frame of accessory `UIBarButtonItem`.
+    public func addInputAccessory(_ text: String, textFont: UIFont, tintColor: UIColor? = nil, rect: CGRect = .zero) {
+        let barButtonItem: UIBarButtonItem = UIBarButtonItem(title: text, style: .done, target: self, action: #selector(onBarButtonItemTap(_:)))
+        barButtonItem.tintColor = tintColor
+        let doneToolbar: UIToolbar = UIToolbar(frame: rect)
+        doneToolbar.barStyle = .default
+        doneToolbar.items = [UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil), barButtonItem]
+        doneToolbar.sizeToFit()
+        inputAccessoryView = doneToolbar
+    }
+    
+    @objc fileprivate func onBarButtonItemTap(_ sender: UIBarButtonItem) {
+        resignFirstResponder()
     }
 }

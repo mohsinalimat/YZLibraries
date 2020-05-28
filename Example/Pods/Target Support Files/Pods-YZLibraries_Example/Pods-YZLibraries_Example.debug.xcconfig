@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/PhoneNumberKit" "${PODS_CONFIGURATION_BUILD_DIR}/YZLibraries"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher" "${PODS_CONFIGURATION_BUILD_DIR}/NVActivityIndicatorView" "${PODS_CONFIGURATION_BUILD_DIR}/PhoneNumberKit" "${PODS_CONFIGURATION_BUILD_DIR}/RSKImageCropper" "${PODS_CONFIGURATION_BUILD_DIR}/UITextView+Placeholder" "${PODS_CONFIGURATION_BUILD_DIR}/YZImagePicker" "${PODS_CONFIGURATION_BUILD_DIR}/YZLibraries"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/PhoneNumberKit/PhoneNumberKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YZLibraries/YZLibraries.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher/Kingfisher.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PhoneNumberKit/PhoneNumberKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RSKImageCropper/RSKImageCropper.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/UITextView+Placeholder/UITextView_Placeholder.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YZImagePicker/YZImagePicker.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YZLibraries/YZLibraries.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "CoreTelephony" -framework "PhoneNumberKit" -framework "YZLibraries"
+OTHER_LDFLAGS = $(inherited) -framework "Accelerate" -framework "CFNetwork" -framework "CoreTelephony" -framework "Foundation" -framework "Kingfisher" -framework "NVActivityIndicatorView" -framework "PhoneNumberKit" -framework "QuartzCore" -framework "RSKImageCropper" -framework "UIKit" -framework "UITextView_Placeholder" -framework "YZImagePicker" -framework "YZLibraries"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

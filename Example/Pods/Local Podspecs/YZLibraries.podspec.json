@@ -1,6 +1,6 @@
 {
   "name": "YZLibraries",
-  "version": "0.1.5",
+  "version": "0.2.8",
   "summary": "YZLibraries is design and developed for Yudiz Solutions Pvt. Ltd.",
   "description": "\"YZLibraries is useful for Junior iOS developer and trainee, so it easy can be easy to develop application and reduce code lines.\"",
   "homepage": "https://github.com/yudiz-vipul/YZLibraries",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/yudiz-vipul/YZLibraries.git",
-    "tag": "0.1.5"
+    "tag": "0.2.8"
   },
   "swift_versions": "5.0",
   "platforms": {
@@ -24,7 +24,19 @@
     "Common/**/*.swift"
   ],
   "dependencies": {
+    "YZImagePicker": [
+
+    ],
+    "Kingfisher": [
+
+    ],
     "PhoneNumberKit": [
+
+    ],
+    "UITextView+Placeholder": [
+
+    ],
+    "NVActivityIndicatorView": [
 
     ]
   },
